@@ -22,10 +22,10 @@ stdenv.mkDerivation {
   dontConfigure = true;
 
   installPhase = ''
-    mkdir -p $out
-    cp default.nix $out/
-    cp -r lib $out/
-    cp -r build $out/
+    mkdir -p $out/pyproject-nix
+    cp default.nix $out/pyproject-nix/
+    cp -r lib $out/pyproject-nix/
+    cp -r build $out/pyproject-nix/
   '';
 
   meta = {
